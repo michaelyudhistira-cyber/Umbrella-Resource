@@ -191,20 +191,17 @@
     font-size: 20px;
   }
 
-  @media (max-width: 880px) {
-    nav.mainnav { display: none; }
-    .hamburger { display: flex; }
-    #nav-toggle:checked ~ .mobile-menu { display: block; }
+@media (max-width: 880px) {
+  .mobile-menu.site-wrap {
+    max-width: 100%;
+    padding: 0;
+  }
 
-    .mobile-menu {
-      display: none;
-      background: var(--header-bg);
-      padding: 12px;
-      border-radius: 8px;
-      margin: 10px auto;
-      max-width: 90%;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    }
+  .mobile-menu {
+    padding: 12px;
+    border-radius: 0;
+  }
+}
     .mobile-menu a {
       display: block;
       padding: 10px;
@@ -213,6 +210,13 @@
       border-radius: 6px;
     }
     .mobile-menu a + a { margin-top: 6px; }
+	  
+	  @media (max-width: 880px) {
+  nav.mainnav {
+    display: none !important;
+  }
+}
+
   }
 </style>
 </head>
@@ -303,7 +307,7 @@
 
 	<main class="site-wrap">
   <h1>Welcome</h1>
-  <p>Contoh layout menyerupai struktur Evil Resource: logo kecil, menu utama, dropdown Games, dan utilitas sosial.</p>
+  <p>Selamat datang kepada website pertama ku...he...he... BTW buat ngetest silahkan lihat bagian luar dan item-item Resident Evil 0 karena sisanya masih kosong. Sorry</p>
 </main>
 	
 	<script>
